@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="store.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="CM_LOGO.png" alt="Logo" class="logo">
+        <h1>MONICA's COLLECTION</h1>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><h3>My Cart</h3></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="discount-options">
+                <h3><br>Discount Options:</h3>
+                <label><input type="radio" name="discount" value="0.2" onchange="applyDiscount()"> SENIOR's Discount - 20%</label><br>
+                <label><input type="radio" name="discount" value="0.3" onchange="applyDiscount()"> PWD Discount - 30%</label><br>
+                <label><input type="radio" name="discount" value="0.1" onchange="applyDiscount()"> Students Discount - 10%</label><br>
+            </div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">₱ 0.00</h2>
+                <h3 id="discounted-price"></h3>
+            </div>
+            <div id="buyNowButton"><button onclick="buyNow()">Buy Now</button></div>
+            <div id="messageBox"></div>
+        </div>
+    </div>
+    <script src="store.js"></script>
+</body>
+</html

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Shop Stock Management</title>
+    <link rel="stylesheet" type="text/css" href="stocks.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Shop Stock Management</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="store.html">Store</a>
+        </nav>
+    </header>
+
+    <table id="stockTable">
+        <tr>
+            <th>Item</th>
+            <th>Stock</th>
+            <th>Add Stock</th>
+        </tr>
+        <!-- Jeans -->
+        <tr>
+            <td colspan="3"><strong>Jeans</strong></td>
+        </tr>
+        <tr>
+            <td>Skinny Fit Plain Jeans</td>
+            <td id="skinnyFitPlainJeansStock">1000</td>
+            <td><input type="number" id="skinnyFitPlainJeansInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Ripped Jeans</td>
+            <td id="rippedJeansStock">1004</td>
+            <td><input type="number" id="rippedJeansInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Straight Fit</td>
+            <td id="straightFitStock">1070</td>
+            <td><input type="number" id="straightFitInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Wide Leg</td>
+            <td id="wideLegStock">1001</td>
+            <td><input type="number" id="wideLegInput" placeholder="Add Stock"></td>
+        </tr>
+		
+        <!-- Shirts -->
+        <tr>
+            <td colspan="3"><strong>Shirts</strong></td>
+        </tr>
+        <tr>
+            <td>Quoted Shirts</td>
+            <td id="quotedShirtsStock">909</td>
+            <td><input type="number" id="quotedShirtsInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>V-neck White Shirt</td>
+            <td id="vNeckWhiteShirtStock">908</td>
+            <td><input type="number" id="vNeckWhiteShirtInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>OOTD Shirt</td>
+            <td id="ootdShirtStock">1005</td>
+            <td><input type="number" id="ootdShirtInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Plain Shirt</td>
+            <td id="plainShirtStock">1009</td>
+            <td><input type="number" id="plainShirtInput" placeholder="Add Stock"></td>
+        </tr>
+
+        <!-- Sando -->
+        <tr>
+            <td colspan="3"><strong>Sando</strong></td>
+        </tr>
+        <tr>
+            <td>Black Sando (men)</td>
+            <td id="blackSandoMenStock">909</td>
+            <td><input type="number" id="blackSandoMenInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Colored OOTD Sando</td>
+            <td id="coloredOotdSandoStock">108</td>
+            <td><input type="number" id="coloredOotdSandoInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>White Sando</td>
+            <td id="whiteSandoStock">909</td>
+            <td><input type="number" id="whiteSandoInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Spaghetti Sando (women)</td>
+            <td id="spaghettiSandoWomenStock">1123</td>
+            <td><input type="number" id="spaghettiSandoWomenInput" placeholder="Add Stock"></td>
+        </tr>
+
+        <!-- Perfume -->
+        <tr>
+            <td colspan="3"><strong>Perfume</strong></td>
+        </tr>
+        <tr>
+            <td>Chanel</td>
+            <td id="chanelStock">1000</td>
+            <td><input type="number" id="chanelInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>L'Or de J'adore</td>
+            <td id="lorDeJadoreStock">1120</td>
+            <td><input type="number" id="lorDeJadoreInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Tiffany & Co.</td>
+            <td id="tiffanyCoStock">990</td>
+            <td><input type="number" id="tiffanyCoInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Villain</td>
+            <td id="villainStock">87</td>
+            <td><input type="number" id="villainInput" placeholder="Add Stock"></td>
+        </tr>
+		
+        <!-- Toys -->
+        <tr>
+            <td colspan="3"><strong>Toys</strong></td>
+        </tr>
+        <tr>
+            <td>Toy Story Toy</td>
+            <td id="toyStoryToyStock">109</td>
+            <td><input type="number" id="toyStoryToyInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Pikachu Plushie</td>
+            <td id="pikachuPlushieStock">155</td>
+            <td><input type="number" id="pikachuPlushieInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Cute Monster Plushie</td>
+            <td id="cuteMonsterPlushieStock">110</td>
+            <td><input type="number" id="cuteMonsterPlushieInput" placeholder="Add Stock"></td>
+        </tr>
+        <tr>
+            <td>Cute Giraffe Toy</td>
+            <td id="cuteGiraffeToyStock">109</td>
+            <td><input type="number" id="cuteGiraffeToyInput" placeholder="Add Stock"></td>
+        </tr>
+    </table>
+    
+    <button onclick="updateStocks()">Update Stocks</button>
+	
+
+	
+	
+
+    <script src="stocks.js">
+
+</script>
+</body>
+</html>
+

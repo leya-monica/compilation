@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    color: #333;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.jumbotron {
+    background-color: grey;
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+    .jumbotron {
+        padding: 1rem;
+    }
+}s

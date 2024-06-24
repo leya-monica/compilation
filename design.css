@@ -1,0 +1,68 @@
+.img {
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-right: 20px;
+}
+.container {
+    width: 1500px;
+    height: 2000px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.item {
+    text-align: center;
+}
+
+.t1 {
+    color: darkred;
+}
+h1 {
+    margin: 0;
+    color: darkred;
+}
+
+h2 {
+    margin: 0;
+    color: darkred;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+    color: black;
+    margin-bottom: 5px;
+}
+
+tr {
+    /* Your custom styles for table rows */
+}
+
+td {
+    border-left: 1px solid darkred;
+    font-size: 16px; /* specify the font size here */
+    margin: 0;
+}
+
+th {
+    background-color: maroon;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: lightyellow;
+}
+
+table {
+    position: relative;
+    border: 1px solid maroon;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="MENU.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="elm.png" alt="Logo" class="logo">
+        <h1> MONIQUE'S FOODHUB</h1>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><h3>My Order</h3></div>
+            <div id="cartItem">Your order is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">₱ 0.00</h2>
+            </div>
+            <div id="buyNowButton"><button onclick="buyNow()"> Order Now </button></div>
+            <div id="messageBox"></div>
+        </div>
+    </div>
+    <script src="MENU.js"></script>
+    <script>
+        const updatedMenu = JSON.parse(localStorage.getItem("menu"));
+
+        if (updatedMenu) {
+            updatedMenu.forEach(item => {
+                const itemElement = document.getElementById(`item-${item.id}`);
+                if (itemElement) {
+                    itemElement.textContent = item.stock;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
